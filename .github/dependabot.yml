@@ -1,12 +1,18 @@
 version: 2
 updates:
-# Update the git submodules
+- package-ecosystem: "npm"
+  directory: "/"
+  schedule:
+    interval: "weekly"
 - package-ecosystem: "gitsubmodule"
   directory: "/"
   schedule:
     interval: "daily"
   labels:
   - "dependencies"
-  - "automerge"
   commit-message:
       prefix: "chore(deps): update garden"
+  assignees:
+  - "dependabot[bot]"
+  reviewers:
+  - "hoanshiro"
