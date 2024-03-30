@@ -131,8 +131,8 @@ function addGlobalPageResources(
     const adsenseClient = cfg.adsense.client
     componentResources.afterDOMLoaded.push(`
       const adsenseScript = document.createElement("script")
-      adsenseScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}"
-      adsenseScript.crossOrigin = "anonymous"
+      adsenseScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      adsenseScript.setAttribute("data-ad-client", "${adsenseClient}")
       adsenseScript.async = true
       document.head.appendChild(adsenseScript)
     `)
