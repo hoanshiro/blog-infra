@@ -137,6 +137,14 @@ function addGlobalPageResources(
       document.head.appendChild(adsenseScript)
     `)
   }
+  if (cfg.reCaptchav3?.provider === "google") {
+    const reCaptchaSiteKey = cfg.reCaptchav3.siteKey
+    componentResources.afterDOMLoaded.push(`
+      const reCaptchaScript = document.createElement("script")
+      reCaptchaScript.src = "https://www.google.com/recaptcha/api.js?render=${reCaptchaSiteKey}"
+      document.head.appendChild(reCaptchaScript)
+    `)
+  }
   if (cfg.enableSPA) {
     componentResources.afterDOMLoaded.push(spaRouterScript)
   } else {

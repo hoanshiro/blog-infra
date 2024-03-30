@@ -14,6 +14,10 @@ const config: QuartzConfig = {
       provider: "google",
       client: "ca-pub-1932725548805816",
     },
+    reCaptchav3: {
+      provider: "google",
+      siteKey: "6LfwV6kpAAAAAPwFvb0CabMCa_elUGg0ZM1fa2JD",
+    },
     baseUrl: "https://shiroversity.com",
     ignorePatterns: ["private", "templates", "templater", ".obsidian", "journal"],
     defaultDateType: "modified",

@@ -18,6 +18,7 @@ export type Analytics =
     }
 
 export type Adsense = null | { provider: "google", client: string}
+export type reCaptcha = null | { provider: "google", siteKey: string}
 
 export interface GlobalConfiguration {
   pageTitle: string
@@ -29,6 +30,8 @@ export interface GlobalConfiguration {
   analytics: Analytics
   /** Google Adsense */
   adsense: Adsense
+  /** Google reCaptcha */
+  reCaptchav3: reCaptcha
   /** Glob patterns to not search */
   ignorePatterns: string[]
   /** Whether to use created, modified, or published as the default type of date */
