@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     adsense: {
       provider: "google",
       client: "ca-pub-1932725548805816",
-    }
+    },
     baseUrl: "https://shiroversity.com",
     ignorePatterns: ["private", "templates", "templater", ".obsidian", "journal"],
     defaultDateType: "modified",
