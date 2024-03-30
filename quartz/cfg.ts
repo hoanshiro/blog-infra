@@ -14,7 +14,7 @@ export type Analytics =
     }
   | {
       provider: "umami"
-      websiteId: string
+      websiteId: '3b3b4a5f-c63b-4296-9928-3d1041af3e1a'
     }
 
 export interface GlobalConfiguration {

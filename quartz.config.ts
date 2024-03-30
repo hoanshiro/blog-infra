@@ -7,7 +7,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "google",
+      provider: "umami",
     },
     baseUrl: "https://shiroversity.com",
     ignorePatterns: ["private", "templates", "templater", ".obsidian", "journal"],
