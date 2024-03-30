@@ -10,12 +10,14 @@ export type Analytics =
     }
   | {
       provider: "google"
-      tagId: "G-BDGKYZESBB"
+      tagId: string
     }
   | {
       provider: "umami"
-      websiteId: '3b3b4a5f-c63b-4296-9928-3d1041af3e1a'
+      websiteId: string
     }
+
+export type Adsense = null | { provider: "google", client: string}
 
 export interface GlobalConfiguration {
   pageTitle: string
@@ -25,6 +27,8 @@ export interface GlobalConfiguration {
   enablePopovers: boolean
   /** Analytics mode */
   analytics: Analytics
+  /** Google Adsense */
+  adsense: Adsense
   /** Glob patterns to not search */
   ignorePatterns: string[]
   /** Whether to use created, modified, or published as the default type of date */

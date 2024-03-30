@@ -7,8 +7,13 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "umami",
+      provider: "google",
+      tagId: "G-BDGKYZESBB",
     },
+    adsense: {
+      provider: "google",
+      client: "ca-pub-1932725548805816",
+    }
     baseUrl: "https://shiroversity.com",
     ignorePatterns: ["private", "templates", "templater", ".obsidian", "journal"],
     defaultDateType: "modified",

@@ -127,7 +127,16 @@ function addGlobalPageResources(
       document.head.appendChild(umamiScript)
     `)
   }
-
+  if (cfg.adsense?.provider === "google") {
+    const adsenseClient = cfg.adsense.client
+    componentResources.afterDOMLoaded.push(`
+      const adsenseScript = document.createElement("script")
+      adsenseScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}"
+      adsenseScript.crossOrigin = "anonymous"
+      adsenseScript.async = true
+      document.head.appendChild(adsenseScript)
+    `)
+  }
   if (cfg.enableSPA) {
     componentResources.afterDOMLoaded.push(spaRouterScript)
   } else {
