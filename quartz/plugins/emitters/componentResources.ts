@@ -85,12 +85,12 @@ function addGlobalPageResources(
 
   if (cfg.analytics?.provider === "google") {
     const tagId = cfg.analytics.tagId
-    staticResources.js.push({
-      src: `https://www.googletagmanager.com/gtag/js?id=${tagId}`,
-      contentType: "external",
-      loadTime: "afterDOMReady",
-    })
     componentResources.afterDOMLoaded.push(`
+      const gtagScript = document.createElement("script")
+      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=${tagId}"
+      gtagScript.async = true
+      document.head.appendChild(gtagScript)
+
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
       gtag("js", new Date());
