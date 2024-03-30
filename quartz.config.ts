@@ -7,9 +7,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
     },
-    baseUrl: "http://hoanshiro.github.io/",
+    baseUrl: "https://shiroversity.com",
     ignorePatterns: ["private", "templates", "templater", ".obsidian", "journal"],
     defaultDateType: "modified",
     theme: {
