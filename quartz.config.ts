@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🧠🌳",
+    pageTitle: "🌿🦥",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -24,22 +24,22 @@ const config: QuartzConfig = {
     theme: {
       typography: {
         header: "Titillium Web",
-        body: "Titillium Web",
+        body: "Source Serif Pro",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#fffcf9",
+          light: "#f7f7f7",
           lightgray: "#f4eae2",
-          gray: "#e0d4c3",
-          darkgray: "#958779",
+          gray: "#607A90",
+          darkgray: "#4D5D53",
           dark: "#6e594f",
           secondary: "#5b7c99",
           tertiary: "#b2ceb8",
           highlight: "rgba(173, 192, 198, 0.15)",
         },
         darkMode: {
-          light: "#332f2c",
+          light: "#333438",
           lightgray: "#514c47",
           gray: "#827d75",
           darkgray: "#ece4dc",
