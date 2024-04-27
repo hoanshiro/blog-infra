@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🌿🦥",
+    pageTitle: "🌿 Shiroversity",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -23,7 +23,7 @@ const config: QuartzConfig = {
     defaultDateType: "modified",
     theme: {
       typography: {
-        header: "Titillium Web",
+        header: "Source Serif Pro",
         body: "Source Serif Pro",
         code: "IBM Plex Mono",
       },
