@@ -24,7 +24,7 @@ const config: QuartzConfig = {
     theme: {
       typography: {
         header: "Source Serif Pro",
-        body: "Source Serif Pro",
+        body: "Philosopher",
         code: "IBM Plex Mono",
       },
       colors: {
